@@ -1,4 +1,5 @@
 # tmux-plugin-spotify
+
 tmux plugin displaying currently played song on Spotify
 
 **Note**: currently it works on Linux only!
@@ -16,6 +17,7 @@ pip install spotify-cli-linux
 
 Installation
 ------------
+
 ### Installation with [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm) (recommended)
 
 Add plugin to the list of TPM plugins in `.tmux.conf`:
@@ -57,8 +59,9 @@ Available Options
 
 References
 ----------
-- https://github.com/tmux-plugins
-- https://github.com/tmux-plugins/tmux-example-plugin
-- https://github.com/tmux-plugins/tmux-battery
-- https://github.com/pwittchen/dotfiles
-- https://github.com/pwittchen/spotify-cli-linux
+
+- <https://github.com/tmux-plugins>
+- <https://github.com/tmux-plugins/tmux-example-plugin>
+- <https://github.com/tmux-plugins/tmux-battery>
+- <https://github.com/pwittchen/dotfiles>
+- <https://github.com/pwittchen/spotify-cli-linux>
