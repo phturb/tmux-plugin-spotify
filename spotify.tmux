@@ -7,8 +7,8 @@ source "$CURRENT_DIR/scripts/helpers.sh"
 spotify_status="#($CURRENT_DIR/scripts/spotify_status.sh)"
 spotify_status_interpolation="\#{spotify_status}"
 
-spotify_playback="#($CURRENT_DIR/scripts/spotify_track.sh)"
-spotify_playback_interpolation="\#{spotify_track}"
+spotify_track="#($CURRENT_DIR/scripts/spotify_track.sh)"
+spotify_track_interpolation="\#{spotify_track}"
 
 set_tmux_option() {
   local option="$1"
@@ -18,8 +18,8 @@ set_tmux_option() {
 
 do_interpolation() {
   local string=$1
-  local string=${string/$spotify_status_status/$spotify_status}
-  local string=${string/$spotify_status_track/$spotify_track}
+  local string=${string/$spotify_status_interpolation/$spotify_status}
+  local string=${string/$spotify_track_interpolation/$spotify_track}
   echo "$string"
 }
 
